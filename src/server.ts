@@ -9,6 +9,7 @@ import CustomErrorHandler from './errors/CustomErrorHandler';
 import router from './routes';
 
 import './database';
+import './database/seeds';
 
 const app = express();
 

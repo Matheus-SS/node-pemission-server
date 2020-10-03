@@ -6,10 +6,10 @@ module.exports = {
   "password": process.env.PG_PASSWORD,
   "database": process.env.PG_DATABASE,
   "entities": [
-    "./dist/src/models/*.js"
+    "./dist/src/models/*.ts"
   ],
   "migrations": [
-    "./dist/src/database/migrations/*.js"
+    "./dist/src/database/migrations/*.ts"
   ],
   "cli": {
     "migrationsDir": "./dist/src/database/migrations"
