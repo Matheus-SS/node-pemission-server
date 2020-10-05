@@ -11,6 +11,7 @@
 # Node permission server
 
 É o backend de uma aplicação onde o principal objetivo é o cadastramento de produtos e utiliza o conceito de roles, onde há algumas funções específicas ao administrador e aos usuários comuns. Foi desenvolvido utilizando nodejs, express, postgres e typescript.
+Deploy foi feito na [Heroku](https://www.heroku.com/)
 
 Neste projeto foi utilizado:
 
