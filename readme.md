@@ -18,7 +18,7 @@ Neste projeto foi utilizado:
 - migrations
 - seed (inserção de dados, antes de desenvolver qualquer interface)
 - roles (usuários diferentes, como: administrador e usuário comum)
--  
+
 Este backend foi feito a partir de um video tutorial da Daniele Evangelista, que é uma das programadoras que trabalha na rocketseat.
 [Tutorial](https://www.youtube.com/watch?v=TGCwB9oMR0o)
 
