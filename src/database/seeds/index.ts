@@ -3,6 +3,7 @@ import { hash } from 'bcryptjs';
 import Role from '../../models/Role';
 import User from '../../models/User';
 
+// The code below it will run everytime you deploy it and when you execute yarn dev or yarn start, so if you dont want to execute this queries keep them commented
 
 createConnection().then(async connection => {
   // Delete all users
@@ -13,12 +14,12 @@ createConnection().then(async connection => {
   //   .where("username = :name", { name: "Admin" })
   //   .execute();
 
-  await getConnection()
-    .createQueryBuilder()
-    .delete()
-    .from(Role)
-    .where("created_at > :date", { date: "2020-10-04" })
-    .execute();
+  //await getConnection()
+  //  .createQueryBuilder()
+  //  .delete()
+  //  .from(Role)
+  //  .where("created_at > :date", { date: "2020-10-04" })
+  //  .execute();
 
   // CREATE INITIAL ROLES
   // await getConnection()
