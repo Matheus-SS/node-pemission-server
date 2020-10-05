@@ -12,7 +12,7 @@ const router = Router();
 
 router.post('/sessions', SessionController.create);
 
-router.post('/users', UserController.create);
+router.post('/users', is(['ROLE_ADMIN']), UserController.create);
 router.get('/users', is(['ROLE_ADMIN']), UserController.index);
 router.delete('/users/:user_id', is(['ROLE_ADMIN']), UserController.delete);
 

@@ -6,11 +6,18 @@ import User from '../../models/User';
 
 createConnection().then(async connection => {
   // Delete all users
+  // await getConnection()
+  //   .createQueryBuilder()
+  //   .delete()
+  //   .from(User)
+  //   .where("username = :name", { name: "Admin" })
+  //   .execute();
+
   await getConnection()
     .createQueryBuilder()
     .delete()
-    .from(User)
-    .where("username = :name", { name: "Admin" })
+    .from(Role)
+    .where("created_at > :date", { date: "2020-10-04" })
     .execute();
 
   // CREATE INITIAL ROLES
